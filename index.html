@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to Russian Version</title>
+</head>
+<body>
+    <script>
+        // Определение языка пользователя на основе HTTP-заголовка Accept-Language
+        const userLanguage = navigator.language || navigator.userLanguage;
+        const languageCode = userLanguage.substring(0, 2);
+
+        // Перенаправление на страницу с соответствующей локализацией
+        if (languageCode === 'ru') {
+            window.location.href = '/ru/index.html'; // Путь к странице с русской локализацией
+        } else {
+            // По умолчанию перенаправляем на английскую версию
+            window.location.href = '/ua/index.html'; // Путь к английской версии
+        }
+    </script>
+</body>
+</html>

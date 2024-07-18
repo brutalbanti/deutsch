@@ -1,0 +1,342 @@
+/* FOOTER */
+
+.footer {
+    background: rgba(43, 43, 43, 1);
+}
+
+.footer__container {}
+
+.footer__consultation-signup {
+    background-color: rgba(184, 159, 255, 1);
+    background-image: url('../assets/footer/Mask.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 37.5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 88px;
+    border-radius: 16px;
+    margin-top: -95px;
+}
+
+.consultation-signup__title {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 35px;
+    max-width: 534px;
+    color: white;
+}
+
+.consultation-signup__input-container {
+    position: relative;
+}
+
+.consultation-signup__input {
+    padding: 21px 20px;
+    width: 440px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.48px;
+    border: 1px solid rgba(35, 35, 35, 0.6)
+}
+
+.consultation-signup__button {
+    position: absolute;
+    background: rgba(35, 35, 35, 1);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.48px;
+    color: white;
+    padding: 17px 20px;
+    right: 4px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.consultation-signup__button:hover {
+    background: rgba(73, 73, 73, 1);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.footer-content__text {
+    max-width: 440px;
+    width: 100%;
+}
+
+.footer-content__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    color: white;
+}
+
+.footer-content-description {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(246, 246, 246, 1);
+    margin-top: 12px;
+}
+
+.footer-form {
+    margin-top: 16px;
+}
+
+.footer__input-container {
+    position: relative;
+}
+
+.footer-form__input {
+    padding: 21px 20px;
+    width: 440px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.48px;
+}
+
+.footer-form__button {
+    position: absolute;
+    background: rgba(184, 159, 255, 1);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.48px;
+    color: white;
+    padding: 17px 20px;
+    right: 4px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-form__button:hover {
+    background: rgba(99, 97, 165, 1);
+}
+
+.footer-content__information {}
+
+.footer-information__list {
+    display: flex;
+    gap: 44px;
+}
+
+.footer-information__item {}
+
+.footer-information__link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+    position: relative;
+}
+
+.footer-information__link::after {
+    position: absolute;
+    content: "";
+    background: rgba(184, 159, 255, 1);
+    width: 36px;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+}
+
+.footer-information__item:nth-child(5),
+.footer-information__item:nth-child(6) {
+    display: none;
+}
+
+.footer-social__list {
+    margin-top: 32px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.footer-social__item {}
+
+.footer-social__link {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.footer-social__item:last-child .footer-social__link {
+    align-items: end;
+}
+
+.footer-root {
+    margin-top: 33px;
+    padding: 33px;
+    border-top: 1px solid rgba(99, 103, 112, 1)
+}
+
+.footer-root__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-root__left {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}
+
+.footer-root__left span {
+    color: rgba(184, 159, 255, 1);
+    font-weight: 700;
+}
+
+.footer-root__right {
+    display: flex;
+    gap: 29px;
+}
+
+.footer-root__right-link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+}
+
+@media(max-width: 1199.98px) {
+    .consultation-signup__title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .consultation-signup__input {
+        width: 310px;
+        font-size: 16px;
+        padding: 19.5px 12px;
+    }
+
+    .consultation-signup__button {
+        padding: 15.5px 16px;
+        font-size: 16px;
+    }
+
+    .footer__consultation-signup {
+        margin-top: -70px;
+    }
+}
+
+@media(max-width: 991.98px) {
+    .footer__consultation-signup {
+        flex-direction: column;
+        gap: 28px;
+        background-image: url('../assets/footer/Mask-mobile.svg');
+        align-items: center;
+        padding: 30.5px 20px;
+    }
+
+    .consultation-signup__title {
+        text-align: center;
+    }
+
+    .footer__content {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .footer-form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content__title {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .footer__input-container {
+        width: 350px;
+    }
+
+    .footer-content__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-form__input {
+        width: 350px;
+        font-size: 16px;
+        padding: 19.5px 12px;
+    }
+
+    .footer-form__button {
+        padding: 15.5px 16px;
+        font-size: 16px;
+    }
+
+    .footer-information__list {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .footer-information__item:nth-child(5),
+    .footer-information__item:nth-child(6) {
+        display: block;
+    }
+
+    .footer-information__link {
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .footer-information__link::after {
+        content: none;
+    }
+
+    .footer-root__left {
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .footer-root__right {
+        display: none;
+    }
+}
+
+@media(max-width: 400.98px) {
+    .footer__consultation-signup {
+        margin-top: -112px;
+    }
+}
+
+/* FOR POUP CONSULTATION FIXED */
+
+.footer-root.popup {
+    padding: 33px 0 178px 0;
+}
+
+@media(max-width: 991.98px) {
+    .footer-root.popup {
+        padding: 33px 0 228px 0;
+    }
+}
